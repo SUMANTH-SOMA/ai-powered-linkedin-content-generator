@@ -1,54 +1,129 @@
-# AiPoweredLinkedinContentGenerator Crew
+# 🚀 AI-Powered LinkedIn Content Generator
 
-Welcome to the AiPoweredLinkedinContentGenerator Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+An AI-powered multi-agent content generation system built using CrewAI AMP and CrewAI Framework.
 
-## Installation
+This project automates the process of researching industry trends and generating professional LinkedIn posts using specialized AI agents.
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+---
 
-First, if you haven't already, install uv:
+## 📌 Features
 
-```bash
-pip install uv
-```
+- Multi-Agent AI Workflow
+- Automated Industry Trend Research
+- Web Search Integration (Serper)
+- Professional LinkedIn Content Generation
+- Attention-Grabbing Hooks
+- Industry Insights & Statistics
+- Call-To-Action Generation
+- Relevant Hashtag Recommendations
 
-Next, navigate to your project directory and install the dependencies:
+---
 
-(Optional) Lock the dependencies and install them by using the CLI command:
+## 🏗️ Architecture
+
+User Topic Input
+        ↓
+LinkedIn Trend Research Analyst
+        ↓
+Research Industry Trends
+        ↓
+Research Report
+        ↓
+LinkedIn Content Strategist
+        ↓
+Generate Professional LinkedIn Content
+        ↓
+LinkedIn Ready Post
+
+---
+
+## 🤖 Agents
+
+### 1. LinkedIn Trend Research Analyst
+
+Responsibilities:
+- Research current trends
+- Gather statistics
+- Find expert insights
+- Collect industry developments
+
+Tools:
+- Serper Web Search
+
+### 2. LinkedIn Content Strategist
+
+Responsibilities:
+- Create engaging LinkedIn posts
+- Generate hooks
+- Build professional storytelling
+- Add CTAs and hashtags
+
+---
+
+## 📋 Tasks
+
+### Research Industry Trends
+
+Collect:
+- Trends
+- Statistics
+- Expert opinions
+- Market developments
+
+### Generate Professional LinkedIn Content
+
+Create:
+- Hook
+- Insights
+- CTA
+- 5 Relevant Hashtags
+
+---
+
+## 🛠️ Technologies Used
+
+- CrewAI AMP
+- CrewAI Framework
+- OpenAI GPT-4o-mini
+- Serper API
+- Python
+- Git
+- GitHub
+
+---
+
+## ▶️ Running Locally
+
 ```bash
 crewai install
-```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/ai_powered_linkedin_content_generator/config/agents.yaml` to define your agents
-- Modify `src/ai_powered_linkedin_content_generator/config/tasks.yaml` to define your tasks
-- Modify `src/ai_powered_linkedin_content_generator/crew.py` to add your own logic, tools and specific args
-- Modify `src/ai_powered_linkedin_content_generator/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
+crewai run
 ```
 
-This command initializes the ai_powered_linkedin_content_generator Crew, assembling the agents and assigning them tasks as defined in your configuration.
+---
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## 🎯 Example Input
 
-## Understanding Your Crew
+```text
+Artificial Intelligence in Healthcare
+```
 
-The ai_powered_linkedin_content_generator Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+---
 
-## Support
+## 📤 Example Output
 
-For support, questions, or feedback regarding the AiPoweredLinkedinContentGenerator Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+A professional LinkedIn post containing:
+- Strong Hook
+- Industry Insights
+- Actionable Takeaways
+- Call-To-Action
+- Relevant Hashtags
 
-Let's create wonders together with the power and simplicity of crewAI.
+---
+
+## 👨‍💻 Author
+
+Sumanth Soma
+
+B.Tech Electronics & Communication Engineering (ECE)
+
+Interested in AI Automation, Data Science, Embedded Systems, and IoT.
