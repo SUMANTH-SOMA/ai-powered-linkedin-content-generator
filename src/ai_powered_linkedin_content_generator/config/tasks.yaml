@@ -1,0 +1,27 @@
+---
+research_industry_trends:
+  description: Research the topic {topic} and gather current industry trends, market
+    statistics, expert opinions, case studies, and recent developments. Focus on collecting
+    accurate and actionable information that can help create a professional and engaging
+    LinkedIn post.
+  expected_output: A structured research report containing key trends, important statistics,
+    expert insights, recent developments, and actionable information related to {topic}.
+  agent: linkedin_trend_research_analyst
+generate_professional_linkedin_content:
+  description: |-
+    Using the research report on {topic}, create a professional LinkedIn post that includes:
+
+    1. A strong attention-grabbing hook.
+    2. Key insights and valuable takeaways.
+    3. Professional storytelling where appropriate.
+    4. Clear formatting with spacing for readability.
+    5. A compelling call-to-action.
+    6. 5 relevant hashtags.
+
+    The content should be informative, engaging, professional, and optimized for LinkedIn audience engagement.
+  expected_output: A complete LinkedIn-ready post about {topic} containing a compelling
+    hook, valuable insights, professional formatting, a call-to-action, and 5 relevant
+    hashtags.
+  agent: linkedin_content_strategist
+  context:
+  - research_industry_trends
